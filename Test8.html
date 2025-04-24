@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>maths</title>
+</head>
+<body>
+    <div class="Perehod">
+        <p >
+            <a href="Teor.html">Теория</a>       <a href="Podborki.html">Подборки с олимпиад</a> <a href="https://mathus.ru/math/index.php#star">Задания для тренировки</a> <a href="Test.html">Проверка знаний</a> <a href="News.html">Новости</a> <a href="index.html">Главная</a> <a href="Literature.html">Литература для подготовки</a>
+        </p>
+    </div>
+<div class="vvod">
+    <p id="text"></p>
+    <br>
+    <input id="gmo" type="number" />
+    <input id="butt1" type="button" value="Проверить ответ"/>
+    <p id="text7"></p>
+    <br>
+    <input id="gmo1" type="number" />
+    <input id="butt2" type="button" value="Проверить ответ"/>
+    <p id="text8"></p>
+    <br>
+    <input id="gmo2" type="number" />
+    <input id="butt3" type="button" value="Проверить ответ"/>
+    <p id="text9"></p>
+    <br>
+    <input id="gmo3" type="number" />
+    <input id="butt4" type="button" value="Проверить ответ"/>
+    <p id="text10"></p>
+    <br>
+    <input id="gmo4" type="number" />
+    <input id="butt5" type="button" value="Проверить ответ"/>
+    <p id="text11"></p>
+    <br />
+    <input id="gmo5" type="number" />;
+    <input id="butt6" type="button" value="Проверить ответ"/>
+</div>
+    <script>
+        let min = 1;
+        let max = 5;
+        let random = Math.floor(Math.random() * (max - min + 1) + min);
+        if (random == 1) {
+            var text1 = "1.	В трапеции АBCD с основанием AD диагонали являются биссектрисами углов В и ∠C = 110° Найдите градусную меру  ∠ВАС."
+            document.getElementById("text").innerHTML = text1;
+            butt1.onclick = function() {
+		        var valik = document.getElementById("gmo").value;
+		        if (valik == 15){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text2 = "2. Натуральные числа a и b таковы, что a > b и HOK(a,b)/HOД(a,b) = 300. Какое наименьшее значение может принимать дробь a/b? Если ответ нельзя представить в виде десятичной несократимой дроби, то округлте до тысячных."
+            document.getElementById("text7").innerHTML = text2;
+            butt2.onclick = function() {
+		        var valik = document.getElementById("gmo1").value;
+		        if (valik == 2.083){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text3 = "3. Республика Тропико состоит из нескольких островов, между которыми нет ни одного моста. Новый президент Тропико решил каждую пару островов соединить одним мостом. За время своего правления он не успел построить лишь несколько мостов, выходящих из острова Дальний (все остальные мосты были построены). Известно, что всего было построено 49 мостов. Сколько построили мостов, выходящих из острова Дальний?"
+            document.getElementById("text8").innerHTML = text3;
+            butt3.onclick = function() {
+		        var valik = document.getElementById("gmo2").value;
+		        if (valik == 4){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text4 = "4.  Прямые y = ax + b, y = bx + c, y = cx + d, y = dx + a ограничивают квадрат. Чему может равняться площадь этого квадрата (укажите все возможности)? Введите все возможные занчения подряд без пробелов."
+            document.getElementById("text9").innerHTML = text4;
+            butt4.onclick = function() {
+		        var valik = document.getElementById("gmo3").value;
+		        if (valik == 2){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text5 = "5. В вагон загрузили несколько килограммов яблочного джема, среди которого было 20% хорошего и 80% плохого. Каждый день половина имеющегося плохого джема сгнивала, и его выбрасывали. Через несколько дней оказалось, что в вагоне стало 20% плохого и 80% хорошего джема. Сколько дней прошло после загрузки?"
+            document.getElementById("text10").innerHTML = text5;
+            butt5.onclick = function() {
+		        var valik = document.getElementById("gmo4").value;
+		        if (valik == 4){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text6 = "6. По кругу расставлено 99 положительных чисел. Оказалось, что для любых четырех стоящих подряд чисел сумма двух первых из них по часовой стрелке равна произведению двух последних из них по часовой стрелке. Чему может быть равна сумма всех 99 расставленных чисел?"
+            document.getElementById("text11").innerHTML = text6;
+            butt6.onclick = function() {
+		        var valik = document.getElementById("gmo5").value;
+		        if (valik == 198){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+        }
+        if (random == 2) {
+            var text1 = "1.	При каких значениях параметра a уравнение |x − 2 + |2x + 2|| = a имеет нечетное количество решений? Запишите все значения подряд без пробелов."
+            document.getElementById("text").innerHTML = text1;
+            butt1.onclick = function() {
+		        var valik = document.getElementById("gmo").value;
+		        if (valik == 3){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text2 = "2. В выпуклом четырёхугольнике ABCD сторона BC вдвое меньше, чем AD. Диагональ AC перпендикулярна стороне CD, а диагональ BD перпендикулярна стороне AB. Найдите больший острый угол этого четырёхугольника, если меньший равен 36 градусов."
+            document.getElementById("text7").innerHTML = text2;
+            butt2.onclick = function() {
+		        var valik = document.getElementById("gmo1").value;
+		        if (valik == 84){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text3 = "3. Площадь квадрата ABCD равна 100. Точки K и L середины сторон AD и CD соответственно. Отрезки BK и AL пересекаются в точке M. Найти площадь четырехугольника KMLD."
+            document.getElementById("text8").innerHTML = text3;
+            butt3.onclick = function() {
+		        var valik = document.getElementById("gmo2").value;
+		        if (valik == 20){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text4 = "4. За один ход можно выбрать натуральное число x и вычеркнуть все натуральные числа y такие, что |x − y| — натуральное составное число. При этом в качестве x можно выбирать уже вычеркнутые числа. Какое наименьшее количество ходов понадобится, чтобы вычеркнуть из натурального ряда все числа?"
+            document.getElementById("text9").innerHTML = text4;
+            butt4.onclick = function() {
+		        var valik = document.getElementById("gmo3").value;
+		        if (valik == 2){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text5 = "5. На слёт «Plants VS Zombies» приехали несколько растений и зомби (всего не больше 20 существ), причём оказалось, что все существа разного роста. Растения всегда говорят правду тем, кто ниже их по росту, и врут тем, кто выше их. Зомби же, наоборот, врут более низким существам и говорят правду более высоким. При знакомстве каждый участник подошел к каждому и сказал либо «Я выше тебя», либо «Я ниже». Фраза «Я ниже» прозвучала 20 раз. Прощаясь, каждый должен был снова подойти к каждому и сказать «Я выше и я растение». Если какое-то существо не могло так сказать, то оно хлопало в ладоши. Раздалось 18 хлопков. Вычислите, сколько существ приехало на слёт."
+            document.getElementById("text10").innerHTML = text5;
+            butt5.onclick = function() {
+		        var valik = document.getElementById("gmo4").value;
+		        if (valik == 11){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text6 = "6.  По кругу стоят 36 детей, каждый из них одет в красную или синюю кофту. Известно, что рядом с каждым мальчиком стоит девочка, а рядом с каждой девочкой стоит человек в синей кофте. Найдите наибольшее возможное количество девочек в красных кофтах."
+            document.getElementById("text11").innerHTML = text6;
+            butt6.onclick = function() {
+		        var valik = document.getElementById("gmo5").value;
+		        if (valik == 24){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+        }
+        if (random == 3) {
+            var text1 = "1.	 Сколько решений в целых числах имеет уравнение 1/2022 = 1/x + 1/y?"
+            document.getElementById("text").innerHTML = text1;
+            butt1.onclick = function() {
+		        var valik = document.getElementById("gmo").value;
+		        if ((valik == 53)){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text2 = "2. На стороне AC треугольника ABC выбрана точка E. Биссектриса AL пересекает отрезок BE в точке X. Оказалось, что AX = XE и AL = BX. Чему равно отношение углов A и B треугольника?"
+            document.getElementById("text7").innerHTML = text2;
+            butt2.onclick = function() {
+		        var valik = document.getElementById("gmo1").value;
+		        if (valik == 2){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text3 = "3. Множество M состоит из 1001 чисел. Оно таково, что при замене любого его элемента на сумму остальных 1000 элементов из M сумма всех 1001 элементов не изменяется. Найдите произведение всех 1001 элементов множества M."
+            document.getElementById("text8").innerHTML = text3;
+            butt3.onclick = function() {
+		        var valik = document.getElementById("gmo2").value;
+		        if (valik == 0){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text4 = "4. Миша в течение недели каждый день срывал по яблоку и взвешивал его. Все яблоки весили по-разному, но вес каждого яблока был равен целому числу граммов и колебался от 221 грамма до 230 граммов (включительно). Миша также вычислял средний вес всех сорванных яблок, и он каждый раз был целым числом. Яблоко, сорванное в седьмой день, весило 225 граммов. Сколько весило яблоко, сорванное в шестой день?"
+            document.getElementById("text9").innerHTML = text4;
+            butt4.onclick = function() {
+		        var valik = document.getElementById("gmo3").value;
+		        if (valik == 3){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text5 = "5. Творческий конкурс в институт состоял из четырех заданий. Всего абитуриентов было  70 человек. Первое испытание успешно выдержали 35, второе 48, третье 64, четвертое 63 человека, при этом все 4 задания не выполнил никто. Прошедших и третье, и четвертое испытания зачислили в институт. Сколько было зачисленных?"
+            document.getElementById("text10").innerHTML = text5;
+            butt5.onclick = function() {
+		        var valik = document.getElementById("gmo4").value;
+		        if (valik == 57){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text6 = "6. Бельчонок прошёл в финал математического конкурса. Перед ним лежат 25 шишек, 25 грибов и 25 ягод. Бельчонку требуется выбрать 25 из 75 этих предметов так, чтобы заработать максимальное количество баллов. Баллы начисляются следующим образом. За каждую шишку бельчонок получает один балл. За каждый гриб — количество баллов, равное удвоенному количеству выбранных шишек. За каждую ягоду — количество баллов, равное утроенному количеству выбранных грибов. Какое максимальное количество баллов может получить бельчонок?"
+            document.getElementById("text11").innerHTML = text6;
+            butt6.onclick = function() {
+		        var valik = document.getElementById("gmo5").value;
+		        if (valik == 168){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+        }
+        if (random == 4) {
+            var text1 = "1.	В треугольнике ABC проведена медиана ВМ. Стороны АВ и ВС составляют с медианой углы 100 градусов и 40 градусов соответственно, сторона АВ равна 1. Найдите длину ВМ. если ответ нецелый, приведите его в виде десятичной дроби."
+            document.getElementById("text").innerHTML = text1;
+            butt1.onclick = function() {
+		        var valik = document.getElementById("gmo").value;
+		        if (valik == 0.5){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text2 = "2. Учитель придумал ребус, заменив в примере a+b = c на сложение двух натуральных чисел цифры буквами: одинаковые цифры одинаковыми буквами, а разные -— разными. (например, если a = 23, а b = 528, то c = 551, и получился, с точностью до выбора букв, ребус АБ+ВАГ = ВВД ). Оказалось, что по получившемуся ребусу однозначно восстанавливается исходный пример. Найдите наименьшее возможное значение суммы c."
+            document.getElementById("text7").innerHTML = text2;
+            butt2.onclick = function() {
+		        var valik = document.getElementById("gmo1").value;
+		        if (valik == 10){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text3 = "3. На шахматной доске 8 × 8 расставляют два чёрных и n белых ферзей так, что одноцветные ферзи не бьют друг друга. При каком наибольшем n это возможно? (Ферзь ходит на любое число полей по вертикали, горизонтали или диагонали и не бьет насквозь через другую фигуру.)"
+            document.getElementById("text8").innerHTML = text3;
+            butt3.onclick = function() {
+		        var valik = document.getElementById("gmo2").value;
+		        if (valik == 10){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text4 = "4.  Марфа Петровна родилась в XX веке. В 2010 году ей было столько лет, какова сумма цифр года ее рождения. В каком году она родилась, если известно, что Марфе Петровне меньше ста лет?"
+            document.getElementById("text9").innerHTML = text4;
+            butt4.onclick = function() {
+		        var valik = document.getElementById("gmo3").value;
+		        if (valik == 1986){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text5 = "5.  На клетчатой доске 3 × 3 стоят рыцари, которые всегда говорят правду, и лжецы, которые всегда лгут. Каждый из них сказал: «Среди моих соседей ровно три лжеца». Сколько лжецов на доске? Соседями считаются люди, находящиеся на клетках, имеющих общую сторону."
+            document.getElementById("text10").innerHTML = text5;
+            butt5.onclick = function() {
+		        var valik = document.getElementById("gmo4").value;
+		        if (valik == 5){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text6 = "6. В равнобедренной трапеции ABCD точка H на основании AD такова, что BH — высота. Оказалось, что ∠BHC = ∠A. Известно, что AH = 10, DH = 18. Найдите CH."
+            document.getElementById("text11").innerHTML = text6;
+            butt6.onclick = function() {
+		        var valik = document.getElementById("gmo5").value;
+		        if (valik == 12){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+        }
+        if (random == 5) {
+            var text1 = "1.	Найдите все пары целых чисел (x; y), удовлетворяющих уравнению x^2 − y^2 − 4x − 6y − 58 = 0. В ответ запишите подряд без пробелов их сумму и количество."
+            document.getElementById("text").innerHTML = text1;
+            butt1.onclick = function() {
+		        var valik = document.getElementById("gmo").value;
+		        if (valik == -44){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text2 = "2. Соревнования по картингу проходят на круговой трассе. Машина Пети самая медленная, у Вовы и Славы — быстрее на 7,2 км/ч и 10,8 км/ч соответственно. Стартовали все трое одновременно, в одном направлении. Сколько раз в течении первого часа соревнования, не включая момент старта, картинги ребят окажутся в одной точке трассы, если длина трассы 300 м? (ширину трассы не учитывать)"
+            document.getElementById("text7").innerHTML = text2;
+            butt2.onclick = function() {
+		        var valik = document.getElementById("gmo1").value;
+		        if (valik == 12){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text3 = "3.  В параллелограмме АВСD точка М середина ВС, АМ пересекается с ВD в точке О. В треугольнике А1В1С1 медиана А1М1 и биссектриса В1D1 пересекаются в точке О1 под углом 90 градусов. Найти отношение площадей полученных четырехугольников ОМСD и О1М1С1D1, при условии, что площади треугольника А1В1С1 и параллелограмма АВСD равны."
+            document.getElementById("text8").innerHTML = text3;
+            butt3.onclick = function() {
+		        var valik = document.getElementById("gmo2").value;
+		        if (valik == 1){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text4 = "4. Положительные действительные числа a, b и c удовлетворяют неравенствам a^2 < b + c, b^2 < c + a, c^2 < a + b. Какое минимальное значение точно НЕ могут принимать эти числа"
+            document.getElementById("text9").innerHTML = text4;
+            butt4.onclick = function() {
+		        var valik = document.getElementById("gmo3").value;
+		        if (valik == 2){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text5 = "5. Произведение двух натуральных чисел a и b равно трёхзначному числу, являющемуся кубом некоего натурального числа k. Частное же чисел a и b равно квадрату этого же числа k. Найдите a, b и k. В ответ запишите их сумму."
+            document.getElementById("text10").innerHTML = text5;
+            butt5.onclick = function() {
+		        var valik = document.getElementById("gmo4").value;
+		        if (valik == 255){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text6 = "6. График квадратичной функции f(x) = x^2 + 2px − p^2 + 7p − 2015 пересекает координатные оси в трёх точках A, B и C. Найдите значение p, при котором произведение длин отрезков OA · OB · OC будет наименьшим."
+            document.getElementById("text11").innerHTML = text6;
+            butt6.onclick = function() {
+		        var valik = document.getElementById("gmo5").value;
+		        if (valik == 3.5){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+        }
+    </script>
+    <style>
+        body {
+    background-color: #f8f8ff;
+}
+        a {
+  outline: none;
+  display: inline-block;
+  border: 2px solid #cdfeaa;
+  background:#cdfeaa;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  margin-top: 50px;
+  margin-left: 20px;
+  position: sticky;
+}
+
+a:link {
+  color: #265301;
+}
+
+a:visited {
+  color: #265301;
+}
+
+a:focus {
+  border-bottom: 1px solid;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+}
+
+a:active {
+  background: #265301;
+  color: #cdfeaa;
+}
+    .vvod{
+        margin-top: 90px;
+    }
+    #butt1{
+        border-radius: 10px;
+        font-size:16px;
+        background-color: #3f51b5;
+        width:155px;
+        border-bottom: 4px solid #19305C;
+        color: #fff;
+        position: sticky;
+        margin-left: 10px;
+        margin-top: -1.7px;
+    }
+    #butt2{
+        border-radius: 10px;
+        font-size:16px;
+        background-color: #3f51b5;
+        width:155px;
+        border-bottom: 4px solid #19305C;
+        color: #fff;
+        position: sticky;
+        margin-left: 10px;
+        margin-top: -1.7px;
+    }
+    #butt3{
+        border-radius: 10px;
+        font-size:16px;
+        background-color: #3f51b5;
+        width:155px;
+        border-bottom: 4px solid #19305C;
+        color: #fff;
+        position: sticky;
+        margin-left: 10px;
+        margin-top: -1.7px;
+    }
+    #butt4{
+        border-radius: 10px;
+        font-size:16px;
+        background-color: #3f51b5;
+        width:155px;
+        border-bottom: 4px solid #19305C;
+        color: #fff;
+        position: sticky;
+        margin-left: 10px;
+        margin-top: -1.7px;
+    }
+    #butt5{
+        border-radius: 10px;
+        font-size:16px;
+        background-color: #3f51b5;
+        width:155px;
+        border-bottom: 4px solid #19305C;
+        color: #fff;
+        position: sticky;
+        margin-left: 10px;
+        margin-top: -1.7px;
+    }
+    #butt6{
+        border-radius: 10px;
+        font-size:16px;
+        background-color: #3f51b5;
+        width:155px;
+        border-bottom: 4px solid #19305C;
+        color: #fff;
+        position: sticky;
+        margin-left: 10px;
+        margin-top: -1.7px;
+    }
+    #gmo{
+        height: 17px;
+        border-radius: 3px;
+        border-color: #3e2522;
+    }
+    #gmo1{
+        height: 17px;
+        border-radius: 3px;
+        border-color: #3e2522;
+    }
+    #gmo2{
+        height: 17px;
+        border-radius: 3px;
+        border-color: #3e2522;
+    }
+    #gmo3{
+        height: 17px;
+        border-radius: 3px;
+        border-color: #3e2522;
+    }
+    #gmo4{
+        height: 17px;
+        border-radius: 3px;
+        border-color: #3e2522;
+    }
+    #gmo5{
+        height: 17px;
+        border-radius: 3px;
+        border-color: #3e2522;
+    }
+</style>
+</body>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>maths</title>
+</head>
+<body>
+    <div class="Perehod">
+        <p >
+            <a href="Teor.html">Теория</a>       <a href="Podborki.html">Подборки с олимпиад</a> <a href="https://mathus.ru/math/index.php#star">Задания для тренировки</a> <a href="Test.html">Проверка знаний</a> <a href="News.html">Новости</a> <a href="index.html">Главная</a> <a href="Literature.html">Литература для подготовки</a>
+        </p>
+    </div>
+    <p id="text"></p>
+    <br>
+    <input id="gmo" type="number" />
+    <input id="butt1" type="button" value="Проверить ответ"/>
+    <p id="text7"></p>
+    <br>
+    <input id="gmo1" type="number" />
+    <input id="butt2" type="button" value="Проверить ответ"/>
+    <p id="text8"></p>
+    <br>
+    <input id="gmo2" type="number" />
+    <input id="butt3" type="button" value="Проверить ответ"/>
+    <p id="text9"></p>
+    <br>
+    <input id="gmo3" type="number" />
+    <input id="butt4" type="button" value="Проверить ответ"/>
+    <p id="text10"></p>
+    <br>
+    <input id="gmo4" type="number" />
+    <input id="butt5" type="button" value="Проверить ответ"/>
+    <p id="text11"></p>
+    <br />
+    <input id="gmo5" type="number" />;
+    <input id="butt6" type="button" value="Проверить ответ"/>
+
+    <script>
+        let min = 1;
+        let max = 5;
+        let random = Math.floor(Math.random() * (max - min + 1) + min);
+        if (random == 1) {
+            var text1 = "1.	Две окружности ω1 и ω2 пересекаются в точках A и B, а их общая касательная имеет с ω1 и ω2 общие точки C и D соответственно, причём точка B расположена ближе к прямой CD, чем точка A. Луч CB пересекает ω2 в точках B и E. Найдите отношение ED : CD, если диагональ AD четырёхугольника ACDE делит отрезок CE в отношении 9 : 25, считая от вершины C."
+            document.getElementById("text").innerHTML = text1;
+            butt1.onclick = function() {
+		        var valik = document.getElementById("gmo").value;
+		        if (valik == 10){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text2 = "2. Квартал представляет собой клетчатый квадрат 10×10. В новогоднюю ночь внезапно впервые пош¨ел снег, и с тех пор каждую ночь на каждую клетку выпадало ровно по 10 см снега; снег падал только по ночам. Каждое утро дворник выбирает один ряд (строку или столбец) и сгребает весь снег оттуда на один из соседних рядов (с каждой клетки — на соседнюю по стороне). Например, он может выбрать седьмой столбец и из каждой его клетки сгрести весь снег в клетку слева от нее. Сгребать снег за пределы квартала нельзя. Вечером сотого дня года в город приедет инспектор и найд¨ет клетку, на которой лежит сугроб наибольшей высоты. Цель дворника — добиться, чтобы эта высота была минимальна. Сугроб какой высоты найд¨ет инспектор?"
+            document.getElementById("text7").innerHTML = text2;
+            butt2.onclick = function() {
+		        var valik = document.getElementById("gmo1").value;
+		        if (valik == 91){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text3 = "3. Решить уравнение x^2 − cos(2x^2) + 1 = 0. В ответ запишите сумму значений x."
+            document.getElementById("text8").innerHTML = text3;
+            butt3.onclick = function() {
+		        var valik = document.getElementById("gmo2").value;
+		        if (valik == 0){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text4 = "4. Последовательность из двух различных чисел продолжили двумя способами: так, чтобы получилась геометрическая прогрессия, и так, чтобы получилась арифметическая прогрессия. При этом третий член геометрической прогрессии совпал с десятым членом арифметической прогрессии. А с каким членом арифметической прогрессии совпал четвёртый член геометрической прогрессии?"
+            document.getElementById("text9").innerHTML = text4;
+            butt4.onclick = function() {
+		        var valik = document.getElementById("gmo3").value;
+		        if (valik == 74){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text5 = "5.  Дано натуральное число n > 4. На плоскости отмечены n точек, никакие три из которых не лежат на одной прямой. Василий проводит по одному все отрезки, соединяющие пары отмеченных точек. На каждом шаге, проводя очередной отрезок S, Василий помечает его наименьшим натуральным числом, которым еще не помечен ни один отрезок, имеющий с S общий конец. Для какого наибольшего k Василий может действовать так, чтобы пометить какой-то отрезок числом k? Запишите в ответ сумму при n = 200 и n = 201."
+            document.getElementById("text10").innerHTML = text5;
+            butt5.onclick = function() {
+		        var valik = document.getElementById("gmo4").value;
+		        if (valik == 795){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text6 = "6. Прямоугольник, составленный из одинаковых квадратных клеток, назовём чётным, если он содержит чётное число клеток. Из одинаковых квадратных клеток составлен прямоугольник длиной 9 клеток и шириной 4 клетки. Сколько в нём содержится чётных прямоугольников?"
+            document.getElementById("text11").innerHTML = text6;
+            butt6.onclick = function() {
+		        var valik = document.getElementById("gmo5").value;
+		        if (valik == 300){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+        }
+        if (random == 2) {
+            var text1 = "1.	Основанием пирамиды SABC служит прямоугольный треугольник ABC с катетами AB = 2 и BC = 6. Высотой пирамиды является отрезок SD, где точка D симметрична точке B относительно середины отрезка AC. Точка M принадлежит боковому ребру SB, причем SM = 2MB Найдите площадь сечения пирамиды плоскостью, проходящей через D параллельно гипотенузе основания AC и отрезку AM, если расстояние от точки B до секущей плоскости квадратному корню из 14."
+            document.getElementById("text").innerHTML = text1;
+            butt1.onclick = function() {
+		        var valik = document.getElementById("gmo").value;
+		        if (valik == 3){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text2 = "2.Петя и Вася придумали десять квадратных трёхчленов. Затем Вася по очереди называл последовательные натуральные числа (начиная с некоторого), а Петя каждое названное число подставлял в один из трёхчленов по своему выбору и записывал полученные значения на доску слева направо. Оказалось, что числа, записанные на доске, образуют арифметическую прогрессию (именно в этом порядке). Какое максимальное количество чисел Вася мог назвать?"
+            document.getElementById("text7").innerHTML = text2;
+            butt2.onclick = function() {
+		        var valik = document.getElementById("gmo1").value;
+		        if (valik == 20){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text3 = "3. Сколько различных целочисленных решений имеет неравенство |x| + |y| < 100 ?"
+            document.getElementById("text8").innerHTML = text3;
+            butt3.onclick = function() {
+		        var valik = document.getElementById("gmo2").value;
+		        if (valik == 19801){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text4 = "4.  Окружность проходит через вершину B треугольника ABC и через его точку пересечения биссектрис I, причём прямая AI касается этой окружности. Пусть X и Y — точки пересечения сторон AB и BC соответственно с этой окружностью, а Z есть точка пересечения стороны AC с прямой IY . Найдите BY , если XI = 3,5; AZ = 5."
+            document.getElementById("text9").innerHTML = text4;
+            butt4.onclick = function() {
+		        var valik = document.getElementById("gmo3").value;
+		        if (valik == 2.45){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text5 = "5. На плоскости нарисован равносторонний треугольник и три окружности с центрами в его вершинах, причём радиус каждой из окружностей меньше высоты треугольника. Точка плоскости красится в жёлтый цвет, если она лежит внутри ровно одной из окружностей; в зелёный, если внутри ровно двух; в синий, если внутри всех трёх. Оказалось, что жёлтая площадь равна 1000, зелёная 100, а синяя — 1. Найдите площадь треугольника."
+            document.getElementById("text10").innerHTML = text5;
+            butt5.onclick = function() {
+		        var valik = document.getElementById("gmo4").value;
+		        if (valik == 150){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text6 = "6.  Найдите количество натуральных чисел k, не превосходящих 353500 и таких, что k^2 + k делится нацело на 505."
+            document.getElementById("text11").innerHTML = text6;
+            butt6.onclick = function() {
+		        var valik = document.getElementById("gmo5").value;
+		        if (valik == 2800){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+        }
+        if (random == 3) {
+            var text1 = "1.	Сколько существует пар натуральных чисел (a, b) у которых НОК(a, b) = 2^3 · 3^2 · 5 · 7^2 = 17640, НОД(a, b) = 12? Среди всех таких пар указать ту, для которой a + b принимает минимально возможное значение, и найти это значение (пары (a, b) и (b, a) считать за одну). Записать 2 числа подряд без пробелов."
+            document.getElementById("text").innerHTML = text1;
+            butt1.onclick = function() {
+		        var valik = document.getElementById("gmo").value;
+		        if ((valik == 8948) || (valik == 9488)){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text2 = "2.Найдите все a <= −4, при которых уравнение x^2 + ax − 3x − 2a = 2 имеет наименьший корень. Запишите в ответ все числа в порядке возрастания подряд."
+            document.getElementById("text7").innerHTML = text2;
+            butt2.onclick = function() {
+		        var valik = document.getElementById("gmo1").value;
+		        if (valik == -4){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text3 = "3.  Даны n монет попарно различных масс и n чашечных весов, n > 2. При каждом взвешивании разрешается выбрать какие-то одни весы, положить на их чаши по одной монете, посмотреть на показания весов и затем снять монеты обратно. Какие-то одни из весов (неизвестно, какие) испорчены и могут выдавать случайным образом как правильный, так и неправильный результат. За какое наименьшее количество взвешиваний можно заведомо найти самую тяжёлую монету? Найдите такое значение при n = 4567478"
+            document.getElementById("text8").innerHTML = text3;
+            butt3.onclick = function() {
+		        var valik = document.getElementById("gmo2").value;
+		        if (valik == 9134955){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text4 = "4.Сколько пар (x; y) целых чисел, являющихся решениями уравнения 7x - 5y = 23, удовлетворяют неравенству x^2 + y^2 <= 37? Найти пару (x; y), для которой x + y наибольшее. В ответ запишите сначала количество пар, потомзначение x, потом значениу y подряд без пробелов."
+            document.getElementById("text9").innerHTML = text4;
+            butt4.onclick = function() {
+		        var valik = document.getElementById("gmo3").value;
+		        if (valik == 241){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text5 = "5. На клетчатый лист бумаги размера 100 × 100 положили несколько попарно неперекрывающихся картонных равнобедренных прямоугольных треугольничков с катетом 1; каждый треугольничек занимает ровно половину одной из клеток. Оказалось, что каждый единичный отрезок сетки (включая граничные) накрыт ровно одним катетом треугольничка. Найдите наибольшее возможное число клеток, не содержащих ни одного треугольничка."
+            document.getElementById("text10").innerHTML = text5;
+            butt5.onclick = function() {
+		        var valik = document.getElementById("gmo4").value;
+		        if (valik == 24950){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text6 = "6. В школе математики и программирования лестница с первого этажа на второй этаж состоит из двух пролетов, состоящих из 8 и 9 ступенек. Сколькими способами десятиклассник Вася может спуститься по ней, если он может шагать на следующую ступеньку, или перешагивать через ступеньку, или прыгать через две ступеньки?"
+            document.getElementById("text11").innerHTML = text6;
+            butt6.onclick = function() {
+		        var valik = document.getElementById("gmo5").value;
+		        if (valik == 12069){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+        }
+        if (random == 4) {
+            var text1 = "1.	 Найдите все натуральные числа n, для каждого из которых существуют такие натуральные числа p и q, что (n^2 + 2n + 3)^p = (2n + 1)^q"
+            document.getElementById("text").innerHTML = text1;
+            butt1.onclick = function() {
+		        var valik = document.getElementById("gmo").value;
+		        if (valik == 5){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text2 = "2.  В треугольнике ABC длины сторон равны 4, 5 и √17. Найдите площадь фигуры, состоящей из тех и только тех точек X внутри треугольника ABC, для которых выполняется условие XA^2 + XB^2 + XC^2 <= 21. Если понадобится, то число пи принять равным 3,14. Округлить ответ до сотых."
+            document.getElementById("text7").innerHTML = text2;
+            butt2.onclick = function() {
+		        var valik = document.getElementById("gmo1").value;
+		        if (valik == 1.74){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text3 = "3. Дан прямоугольный треугольник ABC с прямым углом C. На его катете BC длины 26 как на диаметре построена окружность w. Из точки к этой окружности A проведена касательная AP, отличная от AC. Перпендикуляр PH, опущенный на отрезок BC, пересекает отрезок AB в точке Q. Найдите площадь треугольника BPQ, если известно, что BC:CH = 4:9."
+            document.getElementById("text8").innerHTML = text3;
+            butt3.onclick = function() {
+		        var valik = document.getElementById("gmo2").value;
+		        if (valik == 24){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text4 = "4. Решите систему уравнений: {(√(x^2 + y)) + |y + 8| = 1, (√(x^2 + y − 1)) + |x + 8| = 5. В ответ запишите сумму всех корней."
+            document.getElementById("text9").innerHTML = text4;
+            butt4.onclick = function() {
+		        var valik = document.getElementById("gmo3").value;
+		        if (valik == -13){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text5 = "5. К натуральному числу N прибавили наибольший его делитель, меньший N, и получили степень десятки. Найдите все такие N. В ответ заишите их сумму."
+            document.getElementById("text10").innerHTML = text5;
+            butt5.onclick = function() {
+		        var valik = document.getElementById("gmo4").value;
+		        if (valik == 2017){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text6 = "6. Положительные числа x, y и z таковы, что x + y + z = 5. Какое наименьшее значение может принимать величина x^2 + y^2 + 2z^2 − x^2^y^2z?"
+            document.getElementById("text11").innerHTML = text6;
+            butt6.onclick = function() {
+		        var valik = document.getElementById("gmo5").value;
+		        if (valik == -6){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+        }
+        if (random == 5) {
+            var text1 = "1.	Квадратные трёхчлены P(x) и Q(x) с действительными коэффициентами таковы, что в совокупности они имеют 4 различных действительных корня, а также каждый из многочленов P(Q(x)) и Q(P(x)) имеет 4 различных действительных корня. Какое наименьшее количество различных действительных чисел может быть среди корней многочленов P(x), Q(x), P(Q(x)) и Q(P(x))?"
+            document.getElementById("text").innerHTML = text1;
+            butt1.onclick = function() {
+		        var valik = document.getElementById("gmo").value;
+		        if (valik == 6){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text2 = "2. Многочлен P (x) с целыми коэффициентами удовлетворяет условию P(29)= P(37) = 2022.  Найти наименьшее возможное при этих условиях значение P(0) > 0 ."
+            document.getElementById("text7").innerHTML = text2;
+            butt2.onclick = function() {
+		        var valik = document.getElementById("gmo1").value;
+		        if (valik == 949){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text3 = "3.  Точки A и B лежат на окружности с центром O и радиусом 6, а точка C равноудалена от точек A, B и O. Другая окружность с центром Q и радиусом 8 описана около треугольника ACO. Найдите BQ."
+            document.getElementById("text8").innerHTML = text3;
+            butt3.onclick = function() {
+		        var valik = document.getElementById("gmo2").value;
+		        if (valik == 10){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text4 = "4.  У Пети в семье, помимо папы, мамы и бабушки, есть еще братья и сестры. Средний возраст папы, мамы и бабушки на 20 лет больше среднего возраста детей и на 10 лет больше среднего  возраста всех членов семьи. Сколько сестер у Пети?"
+            document.getElementById("text9").innerHTML = text4;
+            butt4.onclick = function() {
+		        var valik = document.getElementById("gmo3").value;
+		        if (valik == 1){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text5 = "5. На клетках шахматной доски размером 8 × 8 случайным образом расставлены 4 одинаковых фигуры. Найти вероятность того, что три из них будут находиться либо на одной горизонтали, либо на одной вертикали, либо на одной из двух главных диагоналей. С точностью до десятых."
+            document.getElementById("text10").innerHTML = text5;
+            butt5.onclick = function() {
+		        var valik = document.getElementById("gmo4").value;
+		        if (valik == 0.33){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+            var text6 = "6. На ребре AD основания куба ABCDA'B'C'D'(AA', BB', CC', DD' параллельные боковые ребра) расположена точка M так, что AM AD : 1: 2 . Через точку M и вершины A' и C' куба проведена плоскость P . Найти расстояние до плоскости P точки N, расположенной на ребре AB так, что AN : AB = 1:4, если длина ребра куба равна 2."
+            document.getElementById("text11").innerHTML = text6;
+            butt6.onclick = function() {
+		        var valik = document.getElementById("gmo5").value;
+		        if (valik == 7){
+                    alert("Это правильно!")
+                } else{
+                    alert("К сожалению, неверно.")
+                }
+            };
+        }
+        
+    </script>
+    <style>
+        #butt1{
+        border-radius: 10px;
+        font-size:16px;
+        background-color: #3f51b5;
+        width:155px;
+        border-bottom: 4px solid #19305C;
+        color: #fff;
+        position: sticky;
+        margin-left: 10px;
+        margin-top: -1.7px;
+    }
+    #butt2{
+        border-radius: 10px;
+        font-size:16px;
+        background-color: #3f51b5;
+        width:155px;
+        border-bottom: 4px solid #19305C;
+        color: #fff;
+        position: sticky;
+        margin-left: 10px;
+        margin-top: -1.7px;
+    }
+    #butt3{
+        border-radius: 10px;
+        font-size:16px;
+        background-color: #3f51b5;
+        width:155px;
+        border-bottom: 4px solid #19305C;
+        color: #fff;
+        position: sticky;
+        margin-left: 10px;
+        margin-top: -1.7px;
+    }
+    #butt4{
+        border-radius: 10px;
+        font-size:16px;
+        background-color: #3f51b5;
+        width:155px;
+        border-bottom: 4px solid #19305C;
+        color: #fff;
+        position: sticky;
+        margin-left: 10px;
+        margin-top: -1.7px;
+    }
+    #butt5{
+        border-radius: 10px;
+        font-size:16px;
+        background-color: #3f51b5;
+        width:155px;
+        border-bottom: 4px solid #19305C;
+        color: #fff;
+        position: sticky;
+        margin-left: 10px;
+        margin-top: -1.7px;
+    }
+    #butt6{
+        border-radius: 10px;
+        font-size:16px;
+        background-color: #3f51b5;
+        width:155px;
+        border-bottom: 4px solid #19305C;
+        color: #fff;
+        position: sticky;
+        margin-left: 10px;
+        margin-top: -1.7px;
+    }
+    #gmo{
+        height: 17px;
+        border-radius: 3px;
+        border-color: #3e2522;
+    }
+    #gmo1{
+        height: 17px;
+        border-radius: 3px;
+        border-color: #3e2522;
+    }
+    #gmo2{
+        height: 17px;
+        border-radius: 3px;
+        border-color: #3e2522;
+    }
+    #gmo3{
+        height: 17px;
+        border-radius: 3px;
+        border-color: #3e2522;
+    }
+    #gmo4{
+        height: 17px;
+        border-radius: 3px;
+        border-color: #3e2522;
+    }
+    #gmo5{
+        height: 17px;
+        border-radius: 3px;
+        border-color: #3e2522;
+    }
+    a {
+  outline: none;
+  display: inline-block;
+  border: 2px solid #cdfeaa;
+  background:#cdfeaa;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  margin-top: 50px;
+  margin-left: 20px;
+  position: sticky;
+}
+
+a:link {
+  color: #265301;
+}
+
+a:visited {
+  color: #265301;
+}
+
+a:focus {
+  border-bottom: 1px solid;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+}
+
+a:active {
+  background: #265301;
+  color: #cdfeaa;
+}
+body {
+    background-color: #f8f8ff;
+}
+    </style>
+</body>
